@@ -9,7 +9,7 @@ export function AddCategory({setCategories}) {
 
     const addCategory = (event) => {
         event.preventDefault();
-        setCategories(categories => [...categories, category ]);
+        setCategories(categories => [category, ...categories ]);
         setCategory('');
     }
 
